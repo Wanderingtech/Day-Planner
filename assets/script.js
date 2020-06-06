@@ -1,19 +1,19 @@
+//Adding the elements to html. Decided directly changing html worked better for now
+// $(".container").append("<div class='row'></div>");
+// $(".row").append("<input class='time-block col-md-8'></input>");
+// $(".time-block").append("<input class='description' type='text'></input>")
+// $(".row").append("<button class='btn saveBtn col-md-1'><i class='fas fa-save'></i></button>");
+
 //current day at top
 $("#currentDay").text(moment().format("dddd MMM Do YYYY"))
-//Adding the elements to html
-$(".container").append("<input class='description' type='text'></input>")
-$(".container").append("<input class='hour' type='text'></input>");
-$(".container").append("<input class='row' type=text></div>");
-$(".container").append("<input class='time-block' type=text></input>");
-$(".container").append("<button class='saveBtn'>SAVE</button>");
+
+//Timeblocks for each hour of a day. Work day 8-5
+
 
 //User enters event by clicking a timeblock
 
 
 //Prevent default to keep events after page refresh
-
-
-//Timeblocks for each hour of a day. Work day 8-5
 
 
 //Color coded blocks for past/present/future
