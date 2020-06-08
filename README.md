@@ -12,6 +12,6 @@ Wk 5 HW. A daily planner/scheduler
 * Prevent the data from being cleared on refresh
 
 ## Improvements
-This is completely unfinished. I struggled with whether it was preferred to create the elements through JQuery or to edit the HTML. Also, I found it difficult to know what kind of element I was creating based off reading the CSS and HTML given. I could understand the class vs ID but then when it came to input or other type, I felt lost.
+The planner functions with the color changes and the input saves to local storage. Struggling with displaying the local storage back on the planner after page refresh.
 
 Will continue to work through this and resubmit a finished project.
