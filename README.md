@@ -12,6 +12,12 @@ Wk 5 HW. A daily planner/scheduler
 * Prevent the data from being cleared on refresh
 
 ## Improvements
-The planner functions with the color changes and the input saves to local storage. Struggling with displaying the local storage back on the planner after page refresh.
+The planner functions with the color changes and the input saves to local storage. 
 
-Will continue to work through this and resubmit a finished project.
+On page refresh the data stays on page.
+
+I'd like to add a clear day button. 
+
+In the future I'd like the clear day button to be on individual hours as well as over the whole day.
+
+![image](./assets/planner.png)
