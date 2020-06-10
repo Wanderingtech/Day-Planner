@@ -6,7 +6,7 @@ var currentHour = moment().hours();
 
 
 //User hits save after entering a task
-$(".saveBtn").on("click", function(){
+$(".saveBtn").on("click", function() {
 
     event.preventDefault();
     
@@ -17,8 +17,6 @@ $(".saveBtn").on("click", function(){
     localStorage.setItem(time, value);
 
     console.log(time, value);
-    console.log(localStorage);
-
 })
 
 //Color coded blocks for past/present/future
@@ -31,8 +29,8 @@ function hourColor() {
         //Check hours if they're in the past, present, or future
         if(blockHour < currentHour) {
             //Changes color of time-block if in the past
-            // $(this).addClass("past");
-            $(this).children("textarea").addClass("past");
+
+            $(this).addClass("past");
         }
         else if (blockHour === currentHour) {
             //Changes color if the time-block is in the present
@@ -45,24 +43,12 @@ function hourColor() {
             $(this).removeClass("present");
             $(this).addClass("future");
         }
-})}
+})};
 
 hourColor();
 
-// Load updates from local storage at page load
-$("#hour-8.description").val(localStorage.getItem("hour-8"));
-$("#hour-9.description").val(localStorage.getItem("hour-9"));
-$("#hour-10.description").val(localStorage.getItem("hour-10"));
-$("#hour-11.description").val(localStorage.getItem("hour-11"));
-$("#hour-12.description").val(localStorage.getItem("hour-12"));
-$("#hour-13.description").val(localStorage.getItem("hour-13"));
-$("#hour-14.description").val(localStorage.getItem("hour-14"));
-$("#hour-15.description").val(localStorage.getItem("hour-15"));
-$("#hour-16.description").val(localStorage.getItem("hour-16"));
-$("#hour-17.description").val(localStorage.getItem("hour-17"));
-
-
 // Load the localStorage values
-// for(let i = 8; i < 18; i++){
-//     $(`#hour-${i}.description`).val(localStorage.getItem(`hour-${i}`));
-// }
+for(let i = 8; i < 18; i++){
+    $(`#hour-${i}`).children(".description").val(localStorage.getItem(`hour-${i}`));
+    console.log(`#hour-${i}.description`);
+}
